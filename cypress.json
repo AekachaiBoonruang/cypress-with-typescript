@@ -3,22 +3,18 @@
     "env": {
         "dev": "https://arbotena-develop.20scoopscnx.com"
       },
-      "viewportHeight": 1080,
-      "viewportWidth": 1920,
-      "reporter": "cypress-multi-reporters",
-      "reporterOptions": {
-        "reportDir": "cypress/results/report",
-        "overwrite": false,
-        "html": false,
-        "json": true,
-        "timestamp": "mmddyyyy_HHMM"
-      },
-      "screenshotsFolder": "cypress/results/assets/screenshots",
-      "videosFolder": "cypress/results/assets/videos",
-      "defaultCommandTimeout": 30000,
-      "pageLoadTimeout": 60000,
-      "video": true,
-      "waitForAnimations": true,
-      "chromeWebSecurity": false,
-      "retries": 1
+  "viewportHeight": 1080,
+  "viewportWidth": 1920,
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "reporter.json"
+  },
+  "screenshotsFolder": "cypress/results/assets/screenshots",
+  "videosFolder": "cypress/results/assets/videos",
+  "defaultCommandTimeout": 30000,
+  "pageLoadTimeout": 60000,
+  "video": true,
+  "waitForAnimations": true,
+  "chromeWebSecurity": false,
+  "retries": 1
 }

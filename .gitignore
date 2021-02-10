@@ -2,6 +2,7 @@
 
 # report
 cypress/results
+mochawesome-report/*
 
 # dependencies
 /node_modules
