@@ -5,7 +5,8 @@
   "allowJs": true,
   "strict": true,
   "types": [
-  "cypress"
+  "cypress",
+  "node"
   ],
   "lib": [
   "es5",
@@ -15,5 +16,5 @@
   "skipLibCheck": true
   },
   "include": [
-    "cypress/**/*.ts"  ]
+    "**/*.ts"]
 }
