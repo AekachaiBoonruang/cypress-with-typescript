@@ -1,0 +1,23 @@
+name: QA checking code
+
+on:
+  push:
+    branches-ignore:
+      - master
+      - staging
+      - develop
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Install
+        run: npm install
+      - name: QA check
+        run: |
+          npm run lint:check
+          npm run prettier:check
+          npm run cypress:check

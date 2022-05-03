@@ -8,6 +8,6 @@ Trying to config cypress with typescript :D
 [x] Can use command with typescript  
 [x] Export report as html  
 [x] Add video to report  
-[] Check lint  
+[x] Check lint  
 [] Check prettier  
-[] Setting CI
+[x] Setting CI
