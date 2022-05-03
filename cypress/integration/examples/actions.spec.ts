@@ -9,7 +9,7 @@ describe('Sample cypress with typescript', () => {
   it('Visit to google.com', () => {
     const search: string = 'Google'
     cy.visitGoogle(search)
-    cy.loginApi('arbotenacustomer@gmail.com', '20Scoops#',200, 'message','successed')
+    cy.loginApi('test@gmail.com', '20Scoops#',200, 'message','successed')
   })
 
 })
