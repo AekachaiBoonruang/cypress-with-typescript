@@ -1,8 +1,5 @@
 {
-    "supportFile": "cypress/support/index.ts",
-    "env": {
-        "dev": "https://arbotena-develop.20scoopscnx.com"
-      },
+  "supportFile": "cypress/support/index.ts",
   "viewportHeight": 1080,
   "viewportWidth": 1920,
   "reporter": "cypress-multi-reporters",

@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run",
+    "cypress:openDev": "cypress open --env configFile=develop",
+    "cypress:openStag": "cypress open --env configFile=staging",
+    "cypress:runDev": "./node_modules/.bin/cypress install && cypress run --env configFile=develop --browser chrome",
+    "cypress:runStag": "cypress run --env configFile=staging --browser chrome",
     "merge:json": "npx --silent mochawesome-merge ./cypress/results/report/*.json > ./cypress/results/mochawesome.json",
     "generate:report": "npx --silent marge ./cypress/results/mochawesome.json -o ./cypress/results && rm -rf cypress/results/report",
     "move:report": "mv cypress/results/mochawesome.html cypress/results/index.html",
